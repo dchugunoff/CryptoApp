@@ -17,7 +17,8 @@ class CoinMapper {
         highDay = dto.highDay,
         lowDay = dto.lowDay,
         lastMarket = dto.lastMarket,
-        imageUrl = dto.imageUrl
+        imageUrl = dto.imageUrl,
+        lastUpdate = dto.lastUpdate
     )
 
     fun mapJsonContainerToListCoinInfo(jsonContainer: CoinInfoJsonContainerDto): List<CoinInfoDto> {
@@ -53,7 +54,8 @@ class CoinMapper {
             highDay = dbModel.highDay,
             lowDay = dbModel.lowDay,
             lastMarket = dbModel.lastMarket,
-            imageUrl = dbModel.imageUrl
+            imageUrl = dbModel.imageUrl,
+            lastUpdate = dbModel.lastUpdate
         )
     }
 }
